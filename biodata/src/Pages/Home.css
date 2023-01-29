@@ -22,3 +22,8 @@
   margin-bottom: 20px;
   padding-left: 20px;
 }
+.navigation-bar{
+    letter-spacing: 0.1rem;
+    background-color:floralwhite;
+    padding: 0.05rem;
+display: inline-block;}
