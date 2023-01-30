@@ -4,13 +4,16 @@ import "./Home.css";
 import { NextButton } from "../Components/NextButton";
 //style={{height:'85%', width:'35%',margin:'60px'}}
 function Home() {
+  const path='/ExperienceEducation';
+ 
   return (
     <>
       <div className="navigation-bar">
-        <Link to="/Projects">Projects</Link>
-        <Link to="/WorkExperience">work experince & Education</Link>
-        <Link to="/Skills">skills</Link>
-        <Link to="/Contact">contact</Link>
+       <div className="nav-content"><Link to="/Projects">Projects</Link></div>
+       <div className="nav-content"><Link to="/ExperienceEducation">work experince & Education</Link></div>
+       <div className="nav-content"><Link to="/Skills">skills</Link></div>
+       <div className="nav-content"><Link to="/Contact">contact</Link></div>
+        
       </div>
       <div className="main-container">
         <div className="left-container">
@@ -58,11 +61,12 @@ function Home() {
             Testing to assure the accuracy of the developed software.
             </div>  <br/>
             </h4>
-            <div>
+            </div>
+           
+            <div className="btn-next">
             <NextButton/>
             </div>
-        </div>
-      </div>
+            </div>
     </>
   );
 }

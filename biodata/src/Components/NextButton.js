@@ -4,13 +4,15 @@ import { useNavigate } from "react-router";
 
 export const NextButton = (onClickHandler) => {
   const navigate = useNavigate();
+ 
 
   const redirectNextpage = () => {
     if (onClickHandler) {
-      navigate("/ExperienceEducation");
+      navigate('/ExperienceEducation');
     }
   };
-  return (
+
+  return (  
     <img
       className="img"
       src={nextButton}
